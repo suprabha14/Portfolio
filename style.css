@@ -12,6 +12,7 @@
     height: 100vh;
     font-weight: bold;
     transition: transform 0.3s ease-in;
+    position: absolute;
 }
 .options nav{
     padding: 72px;
@@ -28,7 +29,7 @@
 }
 .main {
     /* background-color:rgba(232, 234, 220, 0.689); */
-    padding: 55px;
+    padding: 44px;/* 55px */
     width: 50vw;
 }
 .container {
@@ -83,7 +84,7 @@
     font-size: 15px;
     padding: 11px;
     width: 96px;
-    margin:0px;
+    margin:0 33px;
 }
 .btn:hover{
     background-color: whitesmoke;
@@ -95,11 +96,13 @@
 
 .contact-form {
     font-family: 'Mukta', sans-serif;
-    padding-top: 134px;/* 144  */
+    /* padding-top: 134px; */
     padding: 0 34px;
+    font-size: 22px;
 }
 .contact-form h1 {
     padding: 12px 0;
+    font-size: 31px;
 }
 .contact-form form div {
     padding: 5px 0; /* 10px 0 */
@@ -113,7 +116,7 @@
     padding: 3px;
 }
 #emailHelp {
-    font-size: 10px;
+    font-size: 14px;
     color: rgb(55, 52, 52);
     margin: 0 5px;
     padding: 3px 0 0 0;
@@ -122,28 +125,54 @@
     flex-direction: row;
    
 }
-#form-check input {
+#isclient {/* #form-check input { */
     width: 15px; /* 24px  */
+    height: 29px;
     padding: 34px 0;
 }
 #form-check label {
     padding: 9px;
+    font-family: 'Victor Mono', monospace;
+    font-size: 15px;
+}
+.c-container {
+    background-image: url('https://media.istockphoto.com/id/870307396/photo/wood-block-symbol-telephone-mail-address-and-mobile-phone-website-page-contact-us-concept.jpg?s=612x612&w=0&k=20&c=4OIvMG7Fh-mpGXvObELwwbY3WGi_JryoHg8c82mwGz8=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.form-label {
+    font-family: 'Victor Mono', monospace;
+    font-size: 15px;
+}
+.mb-3 {
+    margin: 0 33px;
 }
 
-h1 h2 {
+/* Services */
+.s-container {
+    background-color: aqua;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/premium-photo/white-background-with-blue-pattern_700248-11628.jpg?w=360');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1, h2 {
     margin: 23px;
-    padding: 73px;
+    padding: 0px;
     font-family: 'Mukta', sans-serif;
 }
 p {
     font-family: 'Victor Mono', monospace;
-    padding: 13px;
-    font-size: 13px;
+    padding: 0px;
+    font-size: 16px;
+    margin-left: 31px;
 }
 
-
+/* About */
 .skill-container {
-    padding: 13px;
+    padding: 0px;
+    margin-left: 34px;
     font-family: 'Victor Mono', monospace;
 }
 .skill {
@@ -173,6 +202,9 @@ p {
     width: 80%;
     background-color: crimson;
 }
+.a-user-pic {
+    margin: 71px;
+}
 
 
 /* Responsive */
@@ -187,12 +219,88 @@ p {
     left: 10px;
 }
 .close {
-    margin-left: 141px;
+    margin-left: 174px;
+    margin-top: 5px;
 }
 @media (max-width: 1043px) {
-    * {
-        background-color: chocolate;
+    .options {
+        height: 104vh;
     }
+    .user-pic {
+        display: none;
+    }
+    .c-container {
+        height: 104vh;
+    }
+    .contact-form h1 {
+        padding: 12px 0;
+        margin: 13px;
+        font-size: 22px;
+    }
+    .contact-form form div input {
+        width: 42vw;
+    }
+    h1, h2 {
+        font-size: 22px;
+        font-family: 'Mukta', sans-serif;
+    }
+    .form-label {
+        font-size: 14px;
+    }
+    .form-control {
+        height: 12px;
+    }
+    #emailHelp {
+        font-size: 10px;
+        width: 90px;
+    }
+    #form-check {
+        font-size: 14px;
+    }
+    .btn-sm {
+    padding: 6px;
+    width: 65px;
+    font-size: 13px;
+    }
+
+    /* Services */
+    .info-container {
+        margin: 9px;
+    }
+    .hello, .about {
+        font-size: 19px;
+    }
+    .name {
+        font-size: 35px;
+    }
+    .more-about {
+        font-size: 16px;
+    }
+    .btn {
+        padding: 4px 9px;
+        border-radius: 20px;
+        font-size: 13px;
+        margin: 0px 5px;
+    }
+
+    /* About */
+    p {
+        font-size: 13px;
+    }
+    .skill-item {
+        font-size: 14px;
+    }
+    .main {
+        margin: 13px 13px;
+    }
+    .main {
+        margin: -19px;
+    }
+    .contact-form {
+        padding: 0 30px;
+        font-size: 22px;
+        width: 286px;
+    } 
     /* .options {
         transform: translate(-443px ,0px);
         position: absolute;
